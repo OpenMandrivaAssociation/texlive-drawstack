@@ -1,3 +1,9 @@
+# revision 19627
+# category Package
+# catalog-ctan /macros/latex/contrib/drawstack
+# catalog-date 2010-08-23 11:19:04 +0200
+# catalog-license lppl1.3
+# catalog-version undef
 Name:		texlive-drawstack
 Version:	20100823
 Release:	1
@@ -40,6 +46,7 @@ notions). The code is written on top of TikZ.
 %doc %{_texmfdistdir}/doc/latex/drawstack/README
 %doc %{_texmfdistdir}/doc/latex/drawstack/stack-example.pdf
 %doc %{_texmfdistdir}/doc/latex/drawstack/stack-example.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ notions). The code is written on top of TikZ.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
