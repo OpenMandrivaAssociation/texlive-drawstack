@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-drawstack
 Version:	20100823
-Release:	1
+Release:	2
 Summary:	Draw execution stacks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
