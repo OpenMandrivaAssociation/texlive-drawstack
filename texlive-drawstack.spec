@@ -47,3 +47,17 @@ notions). The code is written on top of TikZ.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100823-2
++ Revision: 751091
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100823-1
++ Revision: 718262
+- texlive-drawstack
+- texlive-drawstack
+- texlive-drawstack
+- texlive-drawstack
+
