@@ -1,12 +1,12 @@
-# revision 19627
+# revision 28582
 # category Package
 # catalog-ctan /macros/latex/contrib/drawstack
-# catalog-date 2010-08-23 11:19:04 +0200
+# catalog-date 2012-06-18 14:35:47 +0200
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-drawstack
-Version:	20100823
-Release:	2
+Version:	20120618
+Release:	1
 Summary:	Draw execution stacks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
@@ -34,6 +34,7 @@ notions). The code is written on top of TikZ.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/tex/latex/drawstack/drawstack.sty
+%doc %{_texmfdistdir}/doc/latex/drawstack/Makefile
 %doc %{_texmfdistdir}/doc/latex/drawstack/README
 %doc %{_texmfdistdir}/doc/latex/drawstack/stack-example.pdf
 %doc %{_texmfdistdir}/doc/latex/drawstack/stack-example.tex
@@ -47,17 +48,3 @@ notions). The code is written on top of TikZ.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20100823-2
-+ Revision: 751091
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20100823-1
-+ Revision: 718262
-- texlive-drawstack
-- texlive-drawstack
-- texlive-drawstack
-- texlive-drawstack
-
