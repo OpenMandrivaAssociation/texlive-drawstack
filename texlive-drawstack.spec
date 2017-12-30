@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version undef
 Name:		texlive-drawstack
-Version:	20120618
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Draw execution stacks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
