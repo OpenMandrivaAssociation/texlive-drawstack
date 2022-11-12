@@ -1,18 +1,12 @@
-# revision 28582
-# category Package
-# catalog-ctan /macros/latex/contrib/drawstack
-# catalog-date 2012-06-18 14:35:47 +0200
-# catalog-license lppl1.3
-# catalog-version undef
 Name:		texlive-drawstack
-Version:	20190228
+Version:	28582
 Release:	1
 Summary:	Draw execution stacks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ execution stack (typically to illustrate assembly language
 notions). The code is written on top of TikZ.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +35,7 @@ notions). The code is written on top of TikZ.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
