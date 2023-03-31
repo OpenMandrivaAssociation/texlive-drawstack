@@ -1,6 +1,6 @@
 Name:		texlive-drawstack
 Version:	28582
-Release:	1
+Release:	2
 Summary:	Draw execution stacks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
