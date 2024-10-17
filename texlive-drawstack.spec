@@ -3,7 +3,7 @@ Version:	28582
 Release:	2
 Summary:	Draw execution stacks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/drawstack
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/drawstack.doc.r%{version}.tar.xz
